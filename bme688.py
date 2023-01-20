@@ -16,13 +16,13 @@ bme680.sea_level_pressure = 1013.25
 temperature_offset = -5
 
 #create mqtt client
-client = mqtt.Client(client_id="Azote")
+client = mqtt.Client(client_id="your id")
 
 #set username and password
-client.username_pw_set(username="Azote",password="8b4rsh8u")
+client.username_pw_set(username="login",password="yourpass")
 
 #connect to the broker
-client.connect("192.168.1.23", port=1883, keepalive=60)
+client.connect("yourip", port=1883, keepalive=60)
 
 # check if the connection is successful
 if client.connect_status:
